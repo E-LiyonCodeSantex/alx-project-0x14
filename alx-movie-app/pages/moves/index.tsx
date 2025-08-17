@@ -77,7 +77,7 @@ const Movies: React.FC<MProps> = () => {
                     >
                         <option value="">Select Year</option>
                         {
-                            [2024, 2023, 2022, 2021, 2020, 2019].map((year: number) => (
+                            [2025, 2024, 2023, 2022, 2021, 2020, 2019].map((year: number) => (
                                 <option value={year} key={year}>{year}</option>
                             ))
                         }
@@ -86,7 +86,7 @@ const Movies: React.FC<MProps> = () => {
 
                 <p className="text-[#E2D609] text-xl mb-6 mt-6">Online streaming</p>
                 <div className="flex flex-col md:flex-row items-center justify-between">
-                    <h1 className="text-lg md:text-6xl font-bold">{year} {genre} Movie List</h1>
+                    <h1 className="text-lg md:text-4xl font-bold">{year} {genre} Movie List</h1>
                     <div className="flex flex-wrap space-x-0 md:space-x-4 mt-4 md:mt-0">
                         {
                             ['All', 'Animation', 'Comedy', 'Fantasy'].map((genre: string, key: number) => (
